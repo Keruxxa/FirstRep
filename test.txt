@@ -1,1 +1,2 @@
 Hello, Git
+There're two lines in the files
