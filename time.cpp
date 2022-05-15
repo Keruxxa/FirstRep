@@ -6,24 +6,24 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-int Difference(int, int, int);
+int Difference2(int, int, int);
 int main()
 {
     int H, M, S, h, m, s;
     cout << "Type in the first period of time (hours, minutes, seconds): ";
     cin >> H >> M >> S;
-    int interval1 = Difference(H, M, S);
+    int interval1 = Difference2(H, M, S);
 
     cout << "Type in the second period of time (hours, minutes, seconds): ";
     cin >> h >> m >> s;
-    int interval2 = Difference(h, m, s);
+    int interval2 = Difference2(h, m, s);
     int result = abs(interval1 - interval2);
     cout << "The difference between these periods equals: " << result << endl;
     system("pause");
     return 0;
 }
 
-int Difference(int H, int M, int S)
+int Difference2(int H, int M, int S)
 {
     return H * 3600 + M * 60 + S;
 }
