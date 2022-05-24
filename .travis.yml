@@ -2,12 +2,10 @@ language:
   - cpp
 compiler:
   - gcc
-addons:
-  apt:
-    packages:
-      - gcc-6
-      - g++-6
-      - cmake
+packages:
+  - gcc-6
+  - g++-6
+  - cmake
 script:
   # Link gcc-6 and g++-6 to their standard commands
   - ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
